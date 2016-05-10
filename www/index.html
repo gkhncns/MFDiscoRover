@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MFDiscoRover Web Panel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Latest compiled and minified CSS-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--Latest compiled JavaScript-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--Canvas script-->
+    <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!--Zepto script-->
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <!--DiscoRover-->
+    <script type="text/javascript" src="js/discorover.js"></script>
+    <!--Hamburgler-->
+    <script type="text/javascript" src="js/hamburgler.js"></script>
+    <link rel="stylesheet" href="css/hamburgler.css">
+    <!--Slider-->
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="well well-sm well-md">
+            <center>
+                <h4>MFDiscoRover Web Panel</h4>
+            </center>
+        </div>
+        
+        <div class="mobilenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        
+        <a href="javascript:void(0)" class="icon">
+            <div class="hamburger">
+                <div class="menui top-menu"></div>
+                <div class="menui mid-menu"></div>
+                <div class="menui bottom-menu"></div>
+            </div>
+        </a>
+        
+        <div class="row">
+            <div class="col-sm-7 col-md-7">
+                <img id="stream" src="http://192.168.1.15:8080/?action=stream" width="100%" height="458">
+            </div>
+            <div class="col-sm-5 col-md-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div id="chartTemperature" style="height: 175px; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div id="chartHumidity" style="height: 175px; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div id="chartPressure" style="height: 175px; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <center><code>Cam Motion</code></center>
+                <input class="slider" type="range" min="5" max="180" value="90" id="steering" />
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="col-sm-1 col-md-1">
+                    <code>I/O</code>
+                    <button id="onOff" class="btn btn-md btn-danger">
+                        <span class="glyphicon glyphicon-off">
+                    </span>
+                    </button>
+                </div>
+
+                <div class="col-sm-1 col-md-1">
+                    <code>Photo</code>
+                    <button id="screenShot" class="btn btn-md btn-warning">
+                        <span class="glyphicon glyphicon-camera">
+                    </span>
+                    </button>
+                </div>
+                <div class="col-sm-1 col-md-1">
+                    <code>Left</code>
+                    <button class="btn btn-md btn-info" id="frontDCLeft">
+                        <span class="glyphicon glyphicon-arrow-left">
+                    </span>
+                    </button>
+                </div>
+                <div class="col-sm-1 col-md-1">
+                    <code>Up</code>
+                    <button class="btn btn-md btn-info" id="moveForward">
+                        <span class="glyphicon glyphicon-arrow-up">
+                    </span>
+                    </button>
+                </div>
+                <div class="col-sm-1 col-md-1">
+                    <code>Down</code>
+                    <button class="btn btn-md btn-info" id="moveBack">
+                        <span class="glyphicon glyphicon-arrow-down">
+                    </span>
+                    </button>
+                </div>
+                <div class="col-sm-1 col-md-1">
+                    <code>Right</code>
+                    <button class="btn btn-md btn-info" id="frontDCRight">
+                        <span class="glyphicon glyphicon-arrow-right">
+                    </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        
+        <footer>
+            <center>
+                <p>Website desinged by Gokhan Cansu | Onur Erdogan   -   2015 &copy</p>
+            </center>
+        </footer>
+
+    </div>
+</body>
+
+</html>
