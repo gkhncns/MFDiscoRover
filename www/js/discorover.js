@@ -1,6 +1,6 @@
 play = true;
-// var streamLink = "http://172.20.10.8:8080/?action=stream";
-var streamLink = "http://192.168.1.7:8080/?action=stream";
+// var streamLink = "http://192.168.1.1:8080/?action=stream";
+var streamLink = "http://192.168.1.1:8080/?action=stream";
 var humData = [];
 var tempData = [];
 var chartTemp;
