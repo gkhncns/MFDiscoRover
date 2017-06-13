@@ -4,12 +4,12 @@
  * 12/25/2015 - Gokhan Cansu | Onur Erdogan
 */
 
-// FrontDC Implementation
+// FrontDC Pin Implementation
 //int enableFrontDC = 11;
 //int rightInput = 10;
 //int leftInput = 9;
 
-// BackDC Implementation
+// BackDC Pin Implementation
 int enableBackDC = 3;
 int forwardInput = 5;
 int backInput = 6;
@@ -23,7 +23,7 @@ int backInput = 6;
 #include <Servo.h>
 #include "DHT.h"
 
-// Defining pins and sensor types
+// Defining DHT pin and sensor type
 #define DHTPIN 2
 #define DHTTYPE DHT11
 
